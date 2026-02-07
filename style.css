@@ -1,0 +1,168 @@
+/* Alap */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #000000;
+  color: #fff7f7;
+  overflow-x: hidden;
+}
+
+/* Lebegő neon gömbök */
+.bg-orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.55;
+  animation: float 18s infinite ease-in-out alternate;
+  z-index: -10;
+}
+
+.orb1 {
+  width: 400px;
+  height: 400px;
+  background: #0d46e2;
+  top: -80px;
+  left: -120px;
+}
+
+.orb2 {
+  width: 500px;
+  height: 500px;
+  background: #0c00bb;
+  bottom: -150px;
+  right: -100px;
+  animation-duration: 22s;
+}
+
+.orb3 {
+  width: 350px;
+  height: 350px;
+  background: #1bdb55;
+  top: 40%;
+  left: 60%;
+  animation-duration: 26s;
+}
+
+@keyframes float {
+  0% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(40px,-30px) scale(1.1); }
+  100% { transform: translate(-30px,40px) scale(1.05); }
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 7vw;
+  position: sticky;
+  top: 0;
+  background: rgba(2, 8, 23, 0.7);
+  backdrop-filter: blur(12px);
+  z-index: 20;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #9fb3c8;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #e8f7ff;
+  text-shadow: 0 0 12px #1fb6ff;
+}
+
+/* Hero */
+.hero {
+  padding: 120px 7vw;
+  animation: fadeUp 1.2s ease-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.intro {
+  font-size: 1.1rem;
+  color: #b8cbe0;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+/* Kártyák */
+.card {
+  background: rgba(10, 20, 40, 0.8);
+  padding: 25px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  backdrop-filter: blur(12px);
+  margin-bottom: 30px;
+  animation: fadeUp 1.4s ease-out;
+}
+
+.card h2 {
+  margin-bottom: 12px;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card ul li {
+  padding: 6px 0;
+  font-size: 1rem;
+}
+
+/* Gomb */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #1fb6ff, #13ce66);
+  color: #020817;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px #1fb6ff;
+}
+
+/* Tartalom oldalak */
+.content {
+  padding: 120px 7vw;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+/* Animáció */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
