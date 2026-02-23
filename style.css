@@ -200,15 +200,7 @@ footer {
   font-size: 1.1rem;
 }
 
-.card1 {
-   background: rgba(10, 20, 40, 0.8);
-  padding: 25px;
-  border-radius: 18px;
-  border: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 0 25px rgba(0,0,0,0.6);
-  backdrop-filter: blur(12px);
-  margin-bottom: 30px;
-  animation: fadeUp 1.4s ease-out;
-  }
+
+
 
 
